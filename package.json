@@ -1,0 +1,24 @@
+{
+  "name": "mern-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node server.js",
+    "build": "rm -rf dist && babel backend -d dist  && cd frontend && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rabindra Dahal",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.978.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.2",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.9.0",
+    "nodemon": "^2.0.12"
+  }
+}
